@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vinegar Food Restaurant</title>
+    <link rel="stylesheet" href="../css/Feedback.css">
+    <link href="https://fonts.googleapis.com/css2?family=Source+Serif+Pro:wght@200;300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+</head>
+<body>
+    <section class="header_stt1">
+        <div class="item_stt1">
+            <div class="img_logohat_stt1">
+                <a href="../index.html"><img src="../images/logo_hat.png" alt=""></a>
+            </div>
+            <p class="name_restaurant_stt1">VINEGAR FOOD</p>
+            <div class="restaurant_related">
+                <p>1000 branches</p>
+                <p>240000 delicacies</p>
+                <p>72 menus </p>
+            </div>
+            <div class="img_50year_stt1">
+                <img src="../images/50years.jpeg" alt="">
+            </div>
+            <nav>
+                <div class="nav_links_stt1" id="nav_links">
+                    <div class="toggle">
+                        <i id="btn_close" class="fa fa-times"></i>
+                        <i id="btn_open" class="fa fa-bars"></i>
+                    </div>
+                    <ul>
+                        <li>
+                            <a id="tab" href="../index.html">HOME PAGE</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="About.html">ABOUT</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="Meals-Regular.html">MEALS</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="Gallery.html">GALLERY</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="Awards.html">AWARDS</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="Catering.html">CATERING</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="RecipeOfTheMonth.html">RCP-OF-THE-MONTH</a>
+                        </li>
+                        <li>
+                            <a id="tab" href="Contact.html">CONTACT</a>
+                        </li>
+                        <li>
+                            <a id="tab" class="active" href="Feedback.html">FEEDBACK</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </section>
+
+<!--Tụi em viết code của mình vào trong này nhé-->
+<section class="section-background">
+    <div class="container-background">
+        <p class="section-background-title">FEEDBACK</p>
+        <img class="background-img" src="../images/carousel04.jpeg" alt="">
+    </div>
+</section>
+
+<section id="section05">
+    <div class="section05-feature-box">
+        <div class="section05-features-content">
+            <div class="content-container">
+                <div class="content-01">
+                    <img src="../images/suggestion.jpeg" alt="">
+                </div>
+            </div>
+        </div>
+        <div id='hideform' class="section05-features">
+            <div class="section05-features-desc">
+                <div class="section05-feature-text">
+                    <form action="" class="form-container">
+                        <div class="form-item">
+                            <textarea id="queries"  placeholder="Queries"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <textarea id="suggestion"  placeholder="Suggestions"></textarea>
+                        </div>
+                        <div class="form-item">
+                            <textarea id="complaints" placeholder="Complaints"></textarea>
+                        </div>
+                    </form>
+                    <p id="p_checkbox"><input type="checkbox" id="checkbox"> I accept Privacy Policy</p>
+                        <p id="alert"></p>
+                </div>
+            </div>
+            <div class="section05-feature-btn-contact">
+                <button class="btn" onclick="KiemTra(event)" type="submit">SUBMIT</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="container_all_awards">
+    <div class="container_single">
+        <span><img class="flagvietnam" src="../images/flagvietnam.jpeg"></span>
+        <span><img class="flagvietnam" src="../images/flagvietnam.jpeg"></span>
+        <span><img class="flagvietnam" src="../images/flagvietnam.jpeg"></span>
+        <p class="title"> Viet Nam</p>
+        <p>
+            Tuoi Tre Newspaper: <a class="linkeachcountries" href="#">The number of Vinegar Food Restaurant branches is doubling.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Dich Vu Newspaper: <a class="linkeachcountries" href="#">The number of Vinegar Food Restaurant branches is doubling.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Kenh14 Newspaper: <a class="linkeachcountries" href="#">The number of Vinegar Food Restaurant branches is doubling.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+    </div>
+    <div class="container_single">
+        <span><img class="flagchina" src="../images/flagchina.png"></span>
+        <span><img class="flagchina" src="../images/flagchina.png"></span>
+        <span><img class="flagchina" src="../images/flagchina.png"></span>
+        <p class="title">China</p>
+        <p>
+            China Newspaper: <a class="linkeachcountries" href="#">茅矛：懂得吸收、合并，重新找到突破，这才是上海的精神 | 上海明日谈话.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            HongKong Newspaper: <a class="linkeachcountries" href="#">白松露的语法不止一种 
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            DaiLoan Newspaper: <a class="linkeachcountries" href="#">Vinegar Food | 有一种餐厅摘星，叫做众望所归
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            BacKinh Newspaper: <a class="linkeachcountries" href="#">意大利帅大厨，用中式花胶做意面，配上果味饮料，征服无数食客！
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            VuHan Newspaper: <a class="linkeachcountries" href="#">光速升星的传奇餐厅，邀你赴一场钻石级白松露盛宴！
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+    </div>
+    <div class="container_single">
+        <span><img class="flagsingapore" src="../images/flagsingapore.png"></span>
+        <span><img class="flagsingapore" src="../images/flagsingapore.png"></span>
+        <span><img class="flagsingapore" src="../images/flagsingapore.png"></span>
+        <p class="title">Singapore</p>
+        <p>
+            Singapore Newspaper: <a class="linkeachcountries" href="#">The Vinegar Food Restaurant leaves an impression on many domestic and foreign tourists
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Singapore Newspaper: <a class="linkeachcountries" href="#">The number of Vinegar Food Restaurant branches is doubling.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Singapore Newspaper: <a class="linkeachcountries" href="#">Food safety and hygiene is the leading factor determining the success of the Vinegar Food Restaurant.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+    </div>
+    <div class="container_single">
+        <span><img class="flagfrance" src="../images/flagfrance.bmp"></span>
+        <span><img class="flagfrance" src="../images/flagfrance.bmp"></span>
+        <span><img class="flagfrance" src="../images/flagfrance.bmp"></span>
+        <p class="title">France</p>
+        <p>
+            France Football: <a class="linkeachcountries" href="#">La sécurité alimentaire et l'hygiène sont les principaux facteurs déterminant le succès du Vinegar Food.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            France News: <a class="linkeachcountries" href="#">La sécurité alimentaire et l'hygiène sont les principaux facteurs déterminant le succès du Vinegar Food.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            France Newspaper: <a class="linkeachcountries" href="#">La sécurité alimentaire et l'hygiène sont les principaux facteurs déterminant le succès du Vinegar Food.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            France Natural: <a class="linkeachcountries" href="#">La sécurité alimentaire et l'hygiène sont les principaux facteurs déterminant le succès du Vinegar Food.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+    </div>
+    <div class="container_single">
+        <span><img class="flagitalia" src="../images/flagitalia.png"></span>
+        <span><img class="flagitalia" src="../images/flagitalia.png"></span>
+        <span><img class="flagitalia" src="../images/flagitalia.png"></span>
+        <p class="title">Italian</p>
+        <p>
+            France Football: <a class="linkeachcountries" href="#">La sécurité alimentaire et l'hygiène sont les principaux facteurs déterminant le succès du Vinegar Food.
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Rome News: <a class="linkeachcountries" href="#">Le guide l’Espresso - I Ristoranti d’Italia 2017 - Premio Genagricola - L’espresso Alla Carriera
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Roma Newspaper: <a class="linkeachcountries" href="#">Guida Ristoranti d’Italia Gambero Rosso 2017 - Confermate le 3 forchette
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Juventus Natural: <a class="linkeachcountries" href="#">Presentazione, nella Sala Galmozzi del Comune di Bergamo con il capo di gabinetto Christophe Sanchez
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+        <p>
+            Italian Newspaper: <a class="linkeachcountries" href="#">“Vinegar Food - storie e ricette della famiglia Cerea”
+            <span><i class="fa fa-arrow-circle-o-right"></i></span>
+            </a>
+        </p>
+    </div>
+</section>
+
+<!--Tụi em viết code của mình vào trong này nhé-->
+
+    <section class="footer_stt1">
+        <div class="footer-section-1">
+            <div class="container-row-1">
+                <div class="footer-col-01_stt1">
+                    <div class="content-footer-col-01">
+                    <p class="p-title">WHERE</p>
+                    <br>
+                    <p>Pham Ngu Lao, District 1</p>
+                    <p>Ho Chi Minh City - Viet Nam</p>
+                    <br>
+                    </div>
+                </div>
+                <div class="footer-col-02_stt1">
+                    <div class="content-footer-col-01">
+                        <iframe class="img-map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7839.131615740931!2d106.68700757445639!3d10.767907609257568!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31752f3d87380ea7%3A0xb328b961e4443930!2zUGjhuqFtIE5nxakgTMOjbywgUXXhuq1uIDEsIFRow6BuaCBwaOG7kSBI4buTIENow60gTWluaCwgVmnhu4d0IE5hbQ!5e0!3m2!1svi!2s!4v1644293187297!5m2!1svi!2s" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </div>
+                </div>
+                <div class="footer-col-03_stt1">
+                    <div class="content-footer-col-01">
+                        <p class="p-title">CONTACTS</p>
+                        <br>
+                        <p>Tel: +084 234xxxxxx</p>
+                        <p>Mail: <a class="email_stt1" href="#">infor@vinegarfood.com</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-section-2">
+            <div class="container-row-2">
+                <div class="footer-col-1_stt1">
+                    <div class="img_logohat_stt1">
+                        <img src="../images/logo_hat.png" alt="">
+                    </div>
+                    <p class="name_restaurant_stt1">VINEGAR FOOD</p>
+                    <div class="restaurant_related">
+                        <p>1000 branches</p>
+                        <p>240000 delicacies</p>
+                        <p>72 menus </p>
+                    </div>
+                    <div class="img_50year_stt1">
+                        <img src="../images/50years.jpeg" alt="">
+                    </div>
+                </div>
+                <div class="footer-col-2_stt1">
+                    <div class="content-footer-col">
+                    <p>Vinegar Food</p>
+                    <p>Pham Ngu Lao, District 1</p>
+                    <p>Ho Chi Minh City - Viet Nam</p>
+                    <br>
+                    <p class="close_door">WEEKLY CLOSING: TUESDAY NOON</p>
+                    </div>
+                </div>
+                <div class="footer-col-3_stt1">
+                    <div class="content-footer-col">
+                    <p>Phone: +084 234xxxxxx </p>
+                    <p>Fax: +084 234xxxxxx </p>
+                    <p>
+                        <a class="website_stt1" href="#">www.vinegarfood.com.vn</a>
+                    </p>
+                    <a class="email_stt1" href="#">infor@vinegarfood.com</a>
+                    <br>
+                    </div>
+                </div>
+                <div class="footer-col-4_stt1">
+                    <div class="content-footer-col">
+                        <p>
+                            A parking for vehicles is available to our guests in the restaurant, so while you're enjoying a break, meal, our staff will clean your car with water.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+    </section>
+    <script src="../script/carousel.js"></script>
+    <script src="../script/menu.js"></script>
+    <script src="../script/validationfeedback.js"></script>
+</body>
+</html>

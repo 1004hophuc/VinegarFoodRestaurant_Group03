@@ -1,0 +1,519 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Source Serif Pro', serif;
+}
+
+/*
+=============
+Header
+=============
+*/
+
+.header_stt1 {
+    margin-bottom: 20px;
+}
+.item_stt1 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin-top: 20px;
+}
+.img_logohat_stt1 img {
+    width: 66px;
+    height: 66px;
+}
+.img_50year_stt1 img {
+    width: 86px;
+    height: 86px;
+}
+.name_restaurant_stt1 {
+    color: #b4975a;
+    font-size: 2rem;
+    font-weight: 400;
+}
+.restaurant_related {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.restaurant_related p {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 0.5rem;
+    color: #778899;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+    /* color: #696969; */
+}
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav_links_stt1 {
+    flex: 1;
+}
+.nav_links_stt1 ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+a.active {
+    border-top: 1.5px solid #b4975a;
+}
+.nav_links_stt1 ul li a {
+    text-decoration: none;
+    color: #757575;
+    font-weight: 300;
+    font-size: 1rem;
+    letter-spacing: 0.5px;
+    cursor: pointer;
+}
+.toggle {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 40px;
+    height: 40px;
+    background: #b4975a;
+    border-radius: 10px;
+    cursor: pointer;
+    display: none;
+}
+.toggle .fa {
+    position: absolute;
+    color: #fff;
+    font-size: 25px;
+    display: none;
+}
+
+@media(max-width: 768px){
+    .toggle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .toggle #btn_open {
+        display: block;
+    }
+    .nav_links_stt1 {
+        position: fixed ;
+        background: #b4975a;
+        height: 100vh;
+        width: 250px;
+        top: 0;
+        right: -250px;
+        text-align: left;
+        z-index: 2;
+        transition: 1s;
+    }
+    nav ul {
+        margin-top: 15px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav_links_stt1 ul li a {
+        color: #fff;
+    }
+    .nav_links_stt1 ul li.active::before {
+        display: none;
+    }
+    .nav_links_stt1 ul{
+        padding: 30px;
+    }
+    .img-carousel {
+        width: 60vw;
+        height: 300px;
+    }
+}
+
+/*
+============
+Tụi em viết code của mình vào trong này nhé
+============
+*/
+#img:hover{
+    box-shadow: 1px 2px 20px;
+    transform: translateY(-5px);
+}
+#img{
+    transition: 0.5s;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+.section{
+    margin: 50px 0;
+    text-align: center;
+}
+.campus-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+}
+.campus-col h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.campus-col p{
+    margin-bottom: 15px;
+    color: #696969;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+.small{
+    max-width: 1200px;
+    margin: auto;
+}
+.campus-col img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+h3{
+    margin-top: 30px;
+    color: #b4975a;
+}
+.campus2-col{
+    flex-basis: 30%;
+    border-radius: 10px;
+}
+.campus2-col h3 {
+    font-weight: 500;
+    letter-spacing: 1px;
+}
+.campus2-col p{
+    margin-bottom: 15px;
+    color: #696969;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+    line-height: 30px;
+}
+.campus2-col img{
+    width: 100%;
+    display: block;
+    border-radius: 10px;
+    cursor: pointer;
+}
+#head{
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url("../images/pexelres.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    height: 555px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 40px;
+    font-weight: 400;
+}
+.contact{
+    margin-right: 100px;
+    margin-left: 100px;
+    background-image: linear-gradient(rgb(0, 0, 0, 0.4), rgb(0, 0, 0, 0.4)), url("../images/CT.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 100px;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+}
+.contact h1{
+    margin-bottom: 40px;
+}
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid white;
+    background-color: transparent;
+    color: white;
+    padding: 15px 30px;
+    position: relative;
+    cursor: pointer;
+    transition: 0.5s;
+}
+.btn:hover{
+    border: 1px solid white;
+    background-color: white;
+    color: black;
+}
+@media(max-width: 768px){
+    #intro{
+        font-size: 35px;
+        margin-top: 125px;
+    }
+    h3{
+        font-size: 30px;
+    }
+    p{
+        font-size: 20px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+        margin: 100px 0;
+    }
+}
+@media(max-width: 414px){
+    #intro{
+        font-size: 24px;
+    }
+    h3{
+        font-size: 18px;
+    }
+    p{
+        font-size: 15px;
+    }
+    .row{
+        flex-direction: column;
+    }
+    .contact{
+        flex-direction: column;
+        margin: 100px auto;
+    }
+    .contact h1{
+        font-size: 24px;
+    }
+    .btn{
+        padding: 15px;
+        font-size: 10px;
+    }
+}    
+
+/*
+============
+Tụi em viết css của mình vào trong này nhé
+============
+*/
+
+
+/*
+=============
+Footer
+=============
+*/
+.footer_stt1 {
+    color: #696969;
+}
+
+.footer-section-2 {
+    padding: 70px 0px;
+}
+.container-row-2 {
+    display: flex;
+    padding: 0px 40px;
+    margin: 0px 60px;
+    position: relative;
+}
+.footer-col-2_stt1::before, .footer-col-3_stt1::before, .footer-col-4_stt1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-left: 1px solid #e9e9e9;
+}
+.footer-col-1_stt1, .footer-col-2_stt1, .footer-col-3_stt1, .footer-col-4_stt1 {
+    flex-basis: 25%;
+    padding-left: 30px;
+}
+.footer-col-1_stt1 {
+    text-align: center;
+    align-items: center;
+}
+
+.footer-col-1_stt1 .img_logohat_stt1 img {
+    width: 36px;
+    height: 36px;
+}
+.footer-col-1_stt1 .img_50year_stt1 img {
+    width: 46px;
+    height: 46px;
+}
+.footer-col-1_stt1 .name_restaurant_stt1 {
+    color: #b4975a;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+.footer-col-1_stt1 .restaurant_related {
+    display: flex;
+    flex: 1;
+    justify-content: center;
+}
+.footer-col-1_stt1 .restaurant_related p {
+    margin-right: 5px;
+    margin-left: 5px;
+    text-transform: uppercase;
+    font-size: 0.4rem;
+    color: #778899;
+    font-weight: 400;
+    letter-spacing: 0.5px;
+}
+.footer-col-2_stt1 .close_door {
+    color: #A0A0A0;
+}
+.footer-col-2_stt1 .content-footer-col {
+    margin-left: 30px;
+    color: #696969;
+}
+.content-footer-col p {
+    font-size: 14px;
+}
+.website_stt1, .email_stt1 {
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.footer-col-02_stt1 .content-footer-col-01 .img-map {
+    width: 346px;
+    height: 200px;
+}
+.footer-col-3_stt1 p, .website_stt1 {
+    color: #696969;
+}
+.footer-col-3_stt1 .email_stt1 {
+    color: #000;
+}
+.footer-col-3_stt1 .content-footer-col {
+    margin-left: 30px;
+}
+.footer-col-4_stt1 .content-footer-col {
+    margin-left: 30px;
+}
+.footer-col-4_stt1 {
+    margin-right: 30px;
+}
+.footer-col-4_stt1 p {
+    flex-wrap: wrap;
+}
+
+.footer-section-1 {
+    padding: 40px 0px;
+    background-color: #fafafa;
+}
+.container-row-1 {
+    display: flex;
+    padding: 0px 40px;
+    margin: 0px 60px;
+    position: relative;
+}
+.footer-col-01_stt1, .footer-col-02_stt1, .footer-col-03_stt1 {
+    flex-basis: 33.3%;
+}
+.footer-col-02_stt1::before, .footer-col-03_stt1::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-left: 1px solid #e9e9e9;
+}
+.footer-col-02_stt1 .content-footer-col-01 {
+    text-align: center;
+}
+.footer-col-01_stt1 {
+    text-align: center;
+}
+.footer-col-03_stt1 .content-footer-col-01 {
+    margin-left: 40px;
+    text-align: center;
+}
+.content-footer-col-01 .p-title {
+    font-size: 18px;
+    color: #b4975a;
+}
+.content-footer-col-01 p {
+    font-size: 19px;
+    color: #696969;
+}
+.content-footer-col-01 .email_stt1 {
+    font-size: 19px;
+    color: #696969;
+}
+@media(max-width: 768px){
+    .footer-section-1 {
+        text-align: center;
+    }
+    .container-row-1 {
+        display: flex;
+        flex-direction: column;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .footer-col-02_stt1::before, .footer-col-03_stt1::before {
+        content: "";
+        border-left: none;
+    }
+    .footer-col-01_stt1, .footer-col-02_stt1 {
+        border-bottom: 1px solid #e9e9e9;
+        margin-bottom: 20px;
+    }
+    .footer-col-02_stt1 .content-footer-col-01 {
+        margin-left: 0px;
+        text-align: center;
+    }
+    .footer-col-03_stt1 .content-footer-col-01 {
+        margin-left: 0px;
+        text-align: center;
+        margin-bottom: 20px;
+    }
+    .img-map {
+        margin-bottom: 20px;
+    }
+
+    .container-row-2 {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .container-row-2 {
+        padding: 0px 15px;
+        margin: 0px 0px;
+    }
+    .footer-col-3_stt1::before {
+        content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    overflow: hidden;
+    border-left: none;
+    }
+    .footer-col-3_stt1 .content-footer-col {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .footer-col-2_stt1 .content-footer-col {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .footer-col-4_stt1 .content-footer-col {
+        text-align: center;
+        margin-left: 0px;
+    }
+    .footer-col-1_stt1, .footer-col-2_stt1, .footer-col-3_stt1, .footer-col-4_stt1 {
+        padding-left: 0px;
+    }
+    .footer-col-4_stt1 {
+        margin-right: 0px;
+        margin: 15px;
+    }
+    .footer-col-4_stt1::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        overflow: hidden;
+        border-left: none;
+    }
+}
